@@ -1,0 +1,39 @@
+Database:model
+------------------------------------------------------------------
+
+
+Table:model1
+------------------------------------------------------------------
+         Column name            Data type        Column length
+                name              varchar                  100
+                  id                  int                     
+             address              varchar                  100
+              mobile              varchar                   10
+------------------------------------------------------------------
+                 key               Column 
+         primary key                   id 
+------------------------------------------------------------------
+
+Table:model2
+------------------------------------------------------------------
+         Column name            Data type        Column length
+                 uid                  int                     
+               uname              varchar                  100
+------------------------------------------------------------------
+                 key               Column 
+         primary key                  uid 
+         foreign key                uname 
+------------------------------------------------------------------
+          table          column                  table          column
+         model2           uname (n) ->          model1            name (1)
+------------------------------------------------------------------
+
+Table:testt
+------------------------------------------------------------------
+         Column name            Data type        Column length
+            username              varchar                   25
+            password              varchar                   25
+                 uid                  int                     
+            location              varchar                  100
+------------------------------------------------------------------
+
